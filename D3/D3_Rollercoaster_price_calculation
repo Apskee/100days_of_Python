@@ -1,0 +1,38 @@
+#Goal of this excercise is to calculate the price user should pay depending on their height, age etc.
+print("Welcome to the rollercoaster!")
+#Declaring Variables
+height = int(input("What is your height in cm? "))
+bill = 0
+
+##### SOLUTION #####
+#First condition that needs to be met in order for next conditions to be asked
+if height > 150:
+    print("Great news, you can ride the rollercoaster!!")
+    age = int(input("What is your age? "))
+    #Other conditions to ask for user's age
+    if age < 15:
+        bill += 5
+        print("Price is 5 euro")
+    elif age < 18:
+        bill += 7
+        print("Price is 7 euro")
+    elif age >= 45 and age <= 55:
+        bill = 0
+        print("You have a free ride!")
+    else:
+        bill += 10
+        print("Price is 10 euro")
+    photo = input("Would you also like to have a photon taken while on rollercoaster? Additional price is 2 euro, Y or N: ")
+    #Last condition to determine if user wants a photo as well
+    if photo == "Y":
+        bill += 2
+        print(f"You total bill is now {bill}.")
+    else:
+        print(f"Okay ! The total price will be {bill}.")
+else:
+    print("Sorry, you are too short to ride this rollercoaster.")
+
+
+##### EXPLANATION #####
+#Series of conditions are asked if the very first condition meeting the height is true. Depending on user's input bill  will be created. If first condition if false,
+#program ends.
