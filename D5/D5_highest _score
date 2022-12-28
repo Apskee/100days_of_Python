@@ -1,0 +1,24 @@
+#Goal of this excercise is to find the highest number using a for loop
+
+#Asking for input
+student_scores = input("Input a list of student scores ").split()
+for n in range(0, len(student_scores)): 
+  student_scores[n] = int(student_scores[n]) #Converting the list of strings into a list of integers
+print(student_scores)
+
+
+##### SOLUTION #####
+
+#Creating empty variable
+max = 0
+#For loop to store highest number into an empty variable "max"
+for score in student_scores:
+    if score > max:
+        max = score
+#Printing the outcome
+print(f"The highest score in the class is: {max}")
+
+
+##### EXPLANATION #####
+#First I asked for input, then created an empty variable that will store the highest number, for loop runs the loop and compares all the numbers inputted.
+#Then I simply print out the highest number stored in varbiable "max".
