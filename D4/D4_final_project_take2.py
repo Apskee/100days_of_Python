@@ -26,7 +26,10 @@ scissors = '''
 ---.__(___)
 '''
 pictures = [rock, paper, scissors]
+
+#Importing library
 import random
+
 #User choice
 choice = int(input("What do you choose, 0 for Rock, 1 for Paper, 2 for Scissors: "))
 print(f"You chose{pictures[choice]}")

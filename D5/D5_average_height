@@ -1,0 +1,32 @@
+#Goal of this excercise is to use for loop to calculate average height of students.
+
+#Asking for input (each entry separated by space)
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+
+
+##### SOLUTION #####
+
+#Declaring empty variables
+total_height = 0 #Storing all heights into a variable
+total_inputs = 0 #Storing how many times for loop ran
+
+#For loop to calculate heights
+for height in student_heights:
+    total_height += height
+
+#For loop to calculate number of entries
+for student in student_heights:
+    total_inputs += 1
+    
+
+#Calculating average
+average = round(total_height / total_inputs)
+
+#Printing the outcome
+print(average)
+
+
+##### EXPLANATION #####
+#First I declared empty variable so I can store entries into them each them a for loop runs. Then I simply calculated average using numbers I got from the for loop.
