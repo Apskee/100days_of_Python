@@ -18,6 +18,7 @@ nr_numbers = int(input(f"How many numbers would you like?\n"))
 
 #Random letters
 password = [] #Empty variable for storing password
+
 #For loop to generate letters
 for letter in range(1, nr_letters + 1):
     password.append(random.choice(letters))
